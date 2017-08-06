@@ -1,0 +1,28 @@
+/* Global variables*/
+:root {
+    --basic-Background-Color: #77c9d4;
+    --leftside-gradient-body-background: #77c9d4;
+    --rightide-gradient-body-background: #57bc90;
+
+}
+
+
+
+body{
+    margin: 0;
+    height: 100% ;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, yellow); /* Standard syntax (must be last) */
+    
+    /*
+    background-color: var(--basic-Background-Color); /* For browsers that do not support gradients 
+    background: -webkit-linear-gradient(var(--leftside-gradient-body-background),var(--rightide-gradient-body-background)); /* For Safari 5.1 to 6.0 
+    background: -o-linear-gradient(var(--leftside-gradient-body-background),var(--rightide-gradient-body-background)); /* For Opera 11.1 to 12.0 
+    background: -moz-linear-gradient(var(--leftside-gradient-body-background),var(--rightide-gradient-body-background)); /* For Firefox 3.6 to 15/
+    background: linear-gradien(var(--leftside-gradient-body-background),var(--rightide-gradient-body-background)); /* Standard syntax 
+    */
+}
+
