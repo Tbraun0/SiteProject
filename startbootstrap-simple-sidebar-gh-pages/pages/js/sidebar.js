@@ -1,11 +1,11 @@
 // wait for full page to load
 document.addEventListener("DOMContentLoaded", function() { 
+    
     eventListeners();
 });
 
 
-
-
+f
 function eventListeners(){
     
     let startMovemenuitem = 1000;
@@ -20,10 +20,7 @@ function eventListeners(){
     setTimeout(moveGithubLink,  startMovemenuitem);
     setTimeout(movelinkinLink,  startMovemenuitem + timeInterval);
     setTimeout(moveFacebooklink,  startMovemenuitem + (timeInterval*2));
-   
-
-    
-
+      
     /*$("#Github-sidebarLink").animate({ "margin-left": "15%" }, "slow");    /*
     $("#Github-sidebarLink").hover(
 
@@ -35,8 +32,8 @@ function eventListeners(){
 		function () {
            $("#Github-sidebarLink").css("margin-left", "0%");
         }); 
-    
-*/
+    */
+
 }
 
 function moveGithubLink(){

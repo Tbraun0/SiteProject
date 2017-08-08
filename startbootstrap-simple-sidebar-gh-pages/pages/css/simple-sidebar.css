@@ -8,11 +8,18 @@
 }
 /*#015249*/
 
+#main_content{
+    z-index: -1;
+    margin-left: 20%;
+    margin-right: 5%;
+    border-style: solid solid hidden solid; /*top right bottom left*/
+}
 
 #sidebar{
     /*only a certain percentgae of thwe screen is used for the sidebar*/
     /* its height should go all the way down */
-    width: 15%;
+    width: 15%; /* width */
+    
     height: 100%;
     z-index: 2;
     position: absolute;
@@ -21,24 +28,19 @@
     
     background-color: var(--sidebar-Background-Color); 
     /* push the content away from the left-enge of screen by x amount*/
-    
-
-    
-
 }
 
 .sidebar-menu{    
+    z-index: 5;
     list-style: none;
     /*padding: 0;*/
     padding-left: 0;
     list-style-type: none;
     
     background-color: var(--sidebar-Background-Color);
-    
 }
 
-.sidebar-menu div{
-    
+.sidebar-menu div{    
     background-color: var(--sidebar-menunitem-background-color);
     border-left-color: var(--sidebar-leftsideborder-color);
     border-left-width: 5px;
@@ -54,31 +56,22 @@
     border-color: red;    
 }
 
-
 .sidebar-menu a {
     text-decoration: none;
-    color:white;   
-    
+    color:white;  
     /*push text away from left edge*/
     padding-left: 10%;
-
-    
-    
 }
+
 .sidebar-menu li{
     border-bottom-color: var(--sidevar-horizontal-line-color);
     border-style: hidden hidden solid hidden; /*top right bottom left*/
     height: 35px;
-
-  
 }  
 
-
-
-/* appy spcaing vertically between each li on sidebar*/
+/* apply spcaing vertically between each li on sidebar*/
 .sidebar-menu li:not(:last-child) {    
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;   
 }
 
 body{
